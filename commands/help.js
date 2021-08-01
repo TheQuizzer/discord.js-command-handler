@@ -1,12 +1,19 @@
 const { MessageEmbed } = require('discord.js');
+
 module.exports = {
-  name: 'help',
-  run: async(client, message, args) =>{ 
-    const discord = new MessageEmbed()
-      .setThumbnail('https://media.discordapp.net/attachments/830003681638350860/871414957525336155/Untitled465_20210727201502.png')
-      .setColor('RANDOM')
-      .setTitle(`My commands`)
-      .setDescription(`help`);
-      message.channel.send.(embed);
+  name: "help",
+  aliases: ["commands"],
+  usage: "help",
+  description: "help command",
+  run: async (client, message, args) => {
+    
+ const embed = new Discord.MessageEmbed()
+.setTitle(`My Commands`)
+.setDescription(`help`)
+.setColor(`RANDOM`)
+.setFooter(`Footer`)
+message.channel.send(embed)
+    
+
   }
-  }
+}   
