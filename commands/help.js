@@ -7,7 +7,7 @@ module.exports = {
   description: "help command",
   run: async (client, message, args) => {
     
- const embed = new Discord.MessageEmbed()
+const embed = new Discord.MessageEmbed()
 .setTitle(`My Commands`)
 .setDescription(`help`)
 .setColor(`RANDOM`)
